@@ -7,7 +7,7 @@ const messageThree = document.querySelector('#message-3')
 weatherForm.addEventListener('submit',(e)=>
 {
     e.preventDefault()
-    fetch('http://localhost:3000/weather?address='+searchParam.value).then((response)=>{response.json().then((data)=>{
+    fetch('/weather?address='+searchParam.value).then((response)=>{response.json().then((data)=>{
         messageOne.textContent= data.forecast
         messageTwo.textContent = data.location
         messageThree.textContent = data.address
