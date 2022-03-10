@@ -24,7 +24,7 @@ app.get('',(req,res)=>{res.render('index',{
 
 app.get('/help',(req,res)=>{res.render('help',{
     'title':'Help',
-    'msg':'Our world depends on technology more than ever. All around the globe, computers process huge amounts of data for everything from business to video games to weather forecasts. Data is stored in the cloud. Remote working is the new norm. Apps and smart devices keep us organized and entertained. And the need for technology and automation is only going to keep growing.That\’s why TecKno is so committed to making Computer Science resources available to everyone. We want to open the world of technology to any and every student who’s interested in a technology career. After all, 85 percent of the jobs that will exist in 2030 haven\'t even been invented yet.What if one of them was yours?'
+    'msg':'Our world depends on technology more than ever. All around the globe, computers process huge amounts of data for everything from business to video games to weather forecasts.'
 })})
 
 app.get('/help/*',(req,res)=>{res.render('404',{
